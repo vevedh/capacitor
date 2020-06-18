@@ -29,6 +29,7 @@ This will generate a new Electron project in the `electron/` folder in the root 
 Just like the other Capacitor platforms, the `copy` command must be run periodically to sync web content with Electron:
 
 ```bash
+ng run app:build --base-href=./
 npx cap copy
 ```
 
@@ -37,6 +38,7 @@ Run this after making any modifications to your web app.
 ## Running your App
 
 To run your app, use
+
 
 ```bash
 npx cap open electron
