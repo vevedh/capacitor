@@ -4,13 +4,15 @@
   "description": "An Amazing Capacitor App",
   "main": "index.js",
   "scripts": {
-    "electron:start": "electron ./"
+    "electron:start": "electron ./",
+    "electron:build": "electron-builder build"
   },
   "dependencies": {
     "electron-is-dev": "^1.1.0"
   },
   "devDependencies": {
-    "electron": "^8.0.0"
+    "electron": "^8.0.0",
+    "electron-builder": "^22.7.0"
   },
   "keywords": [
     "capacitor",
