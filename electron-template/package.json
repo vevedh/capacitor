@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "electron:start": "electron ./",
+    "electron:startdev": "npm-run-all -p web:local electron:dev",
+    "electron:dev": "wait-on http-get://localhost:4200/ && electron ./  --serve",
+    "web:local": "cd ../ && ng run app:serve --host=localhost --port=4200",
     "electron:build": "electron-builder build"
   },
   "dependencies": {
